@@ -5,7 +5,7 @@ Proposition 2.43: "There does not exist a truce of six queens on a 6x6 chess
 board in which a corner of the board is occupied."
 
 Uses a brute force with backtracking algorithm. Essentially:
-1. Start with a queen in the corner and at the 0,1 square.
+1. Start with a queen in the corner; let the current spot be the 0,1 square.
 2. Place a queen in the current spot.
 3. If the board is invalid, remove the queen.
 4. If we're at the last square and the board was invalid or there are fewer
@@ -16,7 +16,7 @@ the backtracking persists for step 7.)
 solution.
 6. If, at any time, the board is valid and there are six queens on the board,
 we have found the solution.
-7. Move to the next spot.
+7. Move to the next spot. Loop back to step 2.
 
 queens_corner.py attempts to brute force the proposition.
 queens_soln.py runs without the corner restriction, to show that the algorithm
