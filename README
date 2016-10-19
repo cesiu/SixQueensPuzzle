@@ -17,3 +17,8 @@ solution.
 6. If, at any time, the board is valid and there are six queens on the board,
 we have found the solution.
 7. Move to the next spot.
+
+queens_corner.py attempts to brute force the proposition.
+queens_soln.py runs without the corner restriction, to show that the algorithm
+   can find such a truce if placement isn't limited.
+The two text files contain the output of the respective scripts.
