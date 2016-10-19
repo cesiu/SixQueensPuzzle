@@ -1,4 +1,6 @@
 # Finds a truce of six queens on a 6x6 board.
+# A quick and dirty modification of the queens_corner script to show that this
+#  algorithm can find a solution if there're no restrictions on placement.
 # author: Christopher Siu
 
 mboard = [[0,0,0,0,0,0],\
